@@ -1,4 +1,4 @@
-repositoryUrl = "https://github.com/devheolys/symfony2.git"
+repositoryUrl = "https://github.com/devheolys/symfony_web.git"
 branch = "master"
 
 pipeline {
@@ -8,10 +8,7 @@ pipeline {
         stage('Clone sources') {
            steps {
                 git url: repositoryUrl, credentialsId: "git-credentials", branch: branch
-<<<<<<< HEAD
 		sh 'git submodule update --init --recursive'
-=======
->>>>>>> f54da581bde2c986560b121ad2f1dc3f2a61cabb
            }
         }
         stage('Prepare') {

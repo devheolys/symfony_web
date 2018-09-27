@@ -1,0 +1,32 @@
+
+###> symfony/framework-bundle ###
+<<<<<<< HEAD
+/.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+=======
+#/.env
+#/public/bundles/
+#/var/
+#/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+#.phpunit
+#/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+#/.web-server-pid
+>>>>>>> f54da581bde2c986560b121ad2f1dc3f2a61cabb
+###< symfony/web-server-bundle ###

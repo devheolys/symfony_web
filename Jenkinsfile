@@ -8,7 +8,7 @@ pipeline {
         stage('Clone sources') {
            steps {
            }
-                sh 'git pull origin `git branch | awk '{print $2}'`'
+                sh 'git pull origin develop'
         }
 	stage(' Deploy') {
 	   steps{

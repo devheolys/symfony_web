@@ -10,7 +10,7 @@ pipeline {
            }
                 sh 'git pull origin `git branch | awk '{print $2}'`'
         }
-	stage(''){
+	stage(' Deploy') {
 	   steps{
 	sh 'sudo php app/console fos:js-routing:dump --target web/static/js/fos_js_routes.js'
 	sh 'sudo php app/console bazinga:js-translation:dump web/js'

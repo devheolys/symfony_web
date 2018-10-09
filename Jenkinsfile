@@ -7,7 +7,6 @@ pipeline {
     stages {
         stage('Clone sources') {
            steps {
-		sh 'su dev'
                 sh 'cd /var/www/html/symfony_web/' 
                 sh 'git pull origin develop'
         }

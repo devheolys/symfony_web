@@ -7,9 +7,10 @@ pipeline {
     stages {
         stage('Clone sources') {
            steps {
-           }
+           
                 sh 'git pull origin develop'
         }
+	}
 	stage(' Deploy') {
 	   steps{
 	sh 'sudo php app/console fos:js-routing:dump --target web/static/js/fos_js_routes.js'
